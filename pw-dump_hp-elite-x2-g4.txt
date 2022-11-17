@@ -1,4 +1,4 @@
-Speaker output (nothing in headphone jack)
+Headphone output (headphones in headphone jack)
 [
   {
     "id": 0,
@@ -1437,7 +1437,7 @@ Speaker output (nothing in headphone jack)
             "name": "[Out] Headphones",
             "description": "Headphones",
             "priority": 200,
-            "available": "no",
+            "available": "yes",
             "info": [
               3,
               "port.type",
@@ -1456,7 +1456,7 @@ Speaker output (nothing in headphone jack)
             "name": "[In] Mic2",
             "description": "Headphones Stereo Microphone",
             "priority": 200,
-            "available": "no",
+            "available": "yes",
             "info": [
               3,
               "port.type",
@@ -1489,18 +1489,20 @@ Speaker output (nothing in headphone jack)
         ],
         "Route": [
           {
-            "index": 3,
+            "index": 4,
             "direction": "Output",
-            "name": "[Out] Speaker",
-            "description": "Speaker",
-            "priority": 100,
-            "available": "unknown",
+            "name": "[Out] Headphones",
+            "description": "Headphones",
+            "priority": 200,
+            "available": "yes",
             "info": [
-              4,
+              5,
               "port.type",
-              "speaker",
+              "headphones",
+              "port.availability-group",
+              "Headphone",
               "card.profile.port",
-              "3",
+              "4",
               "route.hw-mute",
               "true",
               "route.hw-volume",
@@ -1510,11 +1512,11 @@ Speaker output (nothing in headphone jack)
             "device": 3,
             "props": {
               "mute": false,
-              "channelVolumes": [ 0.205774, 0.205774 ],
+              "channelVolumes": [ 0.004096, 0.004096 ],
               "volumeBase": 1.000000,
               "volumeStep": 0.000015,
               "channelMap": [ "FL", "FR" ],
-              "softVolumes": [ 1.000000, 1.000000 ],
+              "softVolumes": [ 0.943820, 0.943820 ],
               "latencyOffsetNsec": 0
             },
             "devices": [ 3 ],
@@ -1527,7 +1529,7 @@ Speaker output (nothing in headphone jack)
             "name": "[In] Mic2",
             "description": "Headphones Stereo Microphone",
             "priority": 200,
-            "available": "no",
+            "available": "yes",
             "info": [
               5,
               "port.type",
@@ -4954,10 +4956,10 @@ Speaker output (nothing in headphone jack)
           {
             "volume": 1.000000,
             "mute": false,
-            "channelVolumes": [ 0.205774, 0.205774 ],
+            "channelVolumes": [ 0.004096, 0.004096 ],
             "channelMap": [ "FL", "FR" ],
             "softMute": false,
-            "softVolumes": [ 1.000000, 1.000000 ],
+            "softVolumes": [ 0.943820, 0.943820 ],
             "monitorMute": false,
             "monitorVolumes": [ 1.000000, 1.000000 ],
             "params": [
@@ -11464,7 +11466,7 @@ Speaker output (nothing in headphone jack)
     }
   },
   {
-    "id": 189,
+    "id": 163,
     "type": "PipeWire:Interface:Client",
     "version": 3,
     "permissions": [ "r", "w", "x", "m" ],
@@ -11472,13 +11474,13 @@ Speaker output (nothing in headphone jack)
       "change-mask": [ "props" ],
       "props": {
         "pipewire.protocol": "protocol-native",
-        "pipewire.sec.pid": 119522,
+        "pipewire.sec.pid": 125415,
         "pipewire.sec.uid": 1000,
         "pipewire.sec.gid": 1000,
         "pipewire.sec.label": "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023",
         "module.id": 2,
-        "object.id": 189,
-        "object.serial": 4745,
+        "object.id": 163,
+        "object.serial": 4801,
         "log.level": 0,
         "cpu.max-align": 32,
         "default.clock.rate": 48000,
@@ -11499,12 +11501,12 @@ Speaker output (nothing in headphone jack)
         "application.name": "pw-dump",
         "application.process.binary": "pw-dump",
         "application.language": "en_US.UTF-8",
-        "application.process.id": 119522,
+        "application.process.id": 125415,
         "application.process.user": "me",
         "application.process.host": "fedora",
         "window.x11.display": ":0",
         "core.version": "0.3.60",
-        "core.name": "pipewire-me-119522",
+        "core.name": "pipewire-me-125415",
         "pipewire.access": "unrestricted"
       }
     }
